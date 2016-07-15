@@ -103,7 +103,7 @@ class Dropdown extends React.Component {
         {...props}
         className={classNames(this.props.className, rootClasses)}
       >
-        { children }
+        { this.props.open ? children : null }
       </Component>
     );
   }
